@@ -35,6 +35,7 @@ export default function Portfolio() {
             title={item.title} 
             active={selected === item.id} 
             setSelected={setSelected}
+            id={item.id}
           />
         ))}
       </ul>
