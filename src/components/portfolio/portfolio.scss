@@ -69,14 +69,16 @@
         height: 100px;
       }
 
-      h3 {
+      a {
         position: absolute;
         font-size: 20px;
+        color: white;
+        text-decoration: none;
       }
 
       img {
-        width: 100px;
-        height: 100px;
+        width: 220px;
+        height: 150px;
         object-fit: cover;
         z-index: 1;
       }
