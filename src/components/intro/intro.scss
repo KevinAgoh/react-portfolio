@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: orange;
+  background-color: #ffb703;
   display: flex;
 
   @include mobile {
@@ -11,7 +11,7 @@
 
   .left {
     flex: 0.5;
-    background-color: #023047;
+    background-color: $mainColor;
 
     .imgContainer {
       width: 90vh;
@@ -20,7 +20,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #d5d6d8;
+      background-color: #ffb703;
       float: right;
 
       @include mobile {
@@ -30,6 +30,8 @@
       img {
         max-width: 100%;
         height: auto;
+        position: relative;
+        top: 120px;
 
         @include mobile {
           height: 50%;
@@ -49,6 +51,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      color: $mainColor;
 
       @include mobile {
         padding-left: 0;
@@ -70,6 +73,10 @@
 
       h3 {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 20px;
+        }
 
         span {
           font-size: inherit;
@@ -95,15 +102,18 @@
         width: 120px;
         border: 1px solid #023047;
         text-align: center;
+        justify-content: center;
         border-radius: 5px;
         text-decoration: none;
         line-height: 50px;
       }
     }
 
-    .check {
+    .arrow {
       width: 120px;
       height: 120px;
+      display: block;
+      margin: auto;
       animation: arrowBlink 2s infinite;
     }
 
