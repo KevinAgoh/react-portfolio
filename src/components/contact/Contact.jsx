@@ -13,11 +13,11 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="" alt="" />
+        <img src="assets/photo-1577563908411-5077b6dc7624.jpg" alt="" />
       </div>
       <div className="right">
         <h2>Contact</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} action="mailto:kevin.agoh@outlook.com" method="POST">
           <input type="text" placeholder="Email" />
           <textarea placeholder="Message"></textarea>
           <button type="submit">Send</button>

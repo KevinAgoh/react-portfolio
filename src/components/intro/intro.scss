@@ -12,16 +12,17 @@
   .left {
     flex: 0.5;
     background-color: $mainColor;
+    overflow: hidden;
 
     .imgContainer {
-      width: 90vh;
-      height: 90vh;
-      border-radius: 50%;
+      width: 89vh;
+      height: 89vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #ffb703;
+      background-color: $mainColor;
       float: right;
+      overflow: hidden;
 
       @include mobile {
         align-items: flex-start;
@@ -32,6 +33,7 @@
         height: auto;
         position: relative;
         top: 120px;
+        overflow: hidden;
 
         @include mobile {
           height: 50%;

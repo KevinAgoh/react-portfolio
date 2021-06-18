@@ -1,4 +1,19 @@
-export const featuredPortfolio = [
+export const reactPortfolio = [
+  {
+    id: 4,
+    title: "React football Quiz",
+    img: "../../assets/football-quiz.png",
+    link: "https://keum-football-quiz.netlify.app/"
+  },
+  {
+    id: 4,
+    title: "React temperature app",
+    img: "../../assets/temperature-app.png",
+    link: "https://kev-temperature-app.netlify.app/"
+  }
+];
+
+export const railsPortfolio = [
   {
     id: 1,
     title: "Soundmates",
@@ -13,80 +28,8 @@ export const featuredPortfolio = [
   },
   {
     id: 3,
-    title: "Mister Cocktail App",
+    title: "Rails Cocktail App",
     img: "../../assets/mister_cocktail.png",
     link: "https://keum-cocktail-app.herokuapp.com/"
-  }
-];
-
-export const skillsPortfolio = [
-  {
-    id: 1,
-    title: "Javascript",
-    img: "public/assets/Soundmates.png"
-  },
-  {
-    id: 2,
-    title: "React",
-    img: "public/assets/Studio BnB.png"
-  },
-  {
-    id: 3,
-    title: "Ruby on Rails",
-    img: "public/assets/mister cocktail.png"
-  }
-];
-
-export const experiencePortfolio = [
-  {
-    id: 1,
-    title: "Flightright",
-    img: "public/assets/Soundmates.png"
-  },
-  {
-    id: 2,
-    title: "Altagram",
-    img: "public/assets/Studio BnB.png"
-  },
-  {
-    id: 3,
-    title: "Mister Cocktail App",
-    img: "public/assets/mister cocktail.png"
-  }
-];
-
-export const projectsPortfolio = [
-  {
-    id: 1,
-    title: "Soundmates",
-    img: "public/assets/Soundmates.png"
-  },
-  {
-    id: 2,
-    title: "Studio Bnb",
-    img: "public/assets/Studio BnB.png"
-  },
-  {
-    id: 3,
-    title: "Mister Cocktail App",
-    img: "public/assets/mister cocktail.png"
-  }
-];
-
-export const contentPortfolio = [
-  {
-    id: 1,
-    title: "Soundmates",
-    img: "public/assets/Soundmates.png"
-  },
-  {
-    id: 2,
-    title: "Studio Bnb",
-    img: "public/assets/Studio BnB.png"
-  },
-  {
-    id: 3,
-    title: "Mister Cocktail App",
-    img: "public/assets/mister cocktail.png"
   }
 ];

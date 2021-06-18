@@ -1,54 +1,33 @@
 import {useEffect, useState} from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import {featuredPortfolio, skillsPortfolio, experiencePortfolio, projectsPortfolio, contentPortfolio} from "../../data";
+import {reactPortfolio, railsPortfolio} from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("projects");
   const [data, setData] = useState([]); 
 
   const list = [
     {
-      id: "featured",
-      title: "Featured"
+      id: "react",
+      title: "React projects"
     },
     {
-      id: "skills",
-      title: "Skills"
-    },
-    {
-      id: "experience",
-      title: "Experience"
-    },
-    {
-      id: "projects",
-      title: "Projects"
-    },
-    {
-      id: "content",
-      title: "Content"
-    },
+      id: "rails",
+      title: "Ruby on Rails projects"
+    }
   ];
 
   useEffect(() => {
     switch(selected){
-      case "featured":
-        setData(featuredPortfolio);
+      case "react":
+        setData(reactPortfolio);
         break;
-      case "skills":
-        setData(skillsPortfolio);
-        break;
-      case "experience":
-        setData(experiencePortfolio);
-        break;
-      case "projects":
-        setData(projectsPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case "rails":
+        setData(railsPortfolio);
         break;
       default:
-        setData(featuredPortfolio);
+        setData(reactPortfolio);
     }
   }, [selected])
 
