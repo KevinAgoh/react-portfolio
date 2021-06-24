@@ -6,9 +6,15 @@
   flex-direction: column;
   align-items: center;
 
+  @include mobile {
+    height: auto !important;
+    scroll-snap-align: end !important;
+  }
+
   h1 {
     font-size: 50px;
     padding: 10px 0;
+    overflow: clip;
 
     @include mobile {
       font-size: 40px;
@@ -20,6 +26,7 @@
     padding: 0;
     list-style: none;
     display: flex;
+    overflow: clip;
 
     @include mobile {
       margin: 10px 0;
@@ -53,8 +60,8 @@
     }
 
     .item {
-      width: 440px;
-      height: 300px;
+      width: 260px;
+      height: 170px;
       border-radius: 20px;
       border: 1px solid #ffb703;
       margin: 10px 20px;
@@ -68,16 +75,17 @@
       @include mobile {
         width: 260px;
         height: 200px;
+        overflow: clip;
       }
 
       a {
         position: absolute;
-        font-size: 40px;
+        font-size: 20px;
         color: white;
         text-decoration: none;
 
         @include mobile {
-          font-size: 25px;
+          font-size: 20px;
         }
       }
 

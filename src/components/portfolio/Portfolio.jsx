@@ -4,7 +4,7 @@ import "./portfolio.scss";
 import {reactPortfolio, railsPortfolio} from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("projects");
+  const [selected, setSelected] = useState("react");
   const [data, setData] = useState([]); 
 
   const list = [
