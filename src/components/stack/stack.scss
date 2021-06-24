@@ -17,7 +17,7 @@ h4 {
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -30,16 +30,16 @@ h4 {
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
 
-  p {
+  h3 {
     margin-block-start: auto;
   }
 
   .stack-icon {
     font-size: 60px;
-    color: black;
+    color: $mainColor;
     position: absolute;
 
     @keyframes bounce {

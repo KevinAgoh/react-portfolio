@@ -5,6 +5,8 @@ import { FaHtml5 } from 'react-icons/fa';
 import { SiRails } from 'react-icons/si';
 import { DiSass } from 'react-icons/di';
 import { FaWordpress } from 'react-icons/fa';
+import { FaBootstrap } from 'react-icons/fa';
+import { FaFigma } from 'react-icons/fa';
 import "./stack.scss";
 
 export default function Stack() {
@@ -15,27 +17,35 @@ export default function Stack() {
       <div class="parent">
         <div class="icon-container">
           <FaReact className="stack-icon" />
-          <p>React</p>
+          <h3>React</h3>
         </div>
         <div class="icon-container">
           <DiJavascript1 className="stack-icon" />
-          <p>JavaScript</p>
+          <h3>JavaScript</h3>
         </div>
         <div class="icon-container">
           <FaHtml5 className="stack-icon" />
-          <p>HTML</p>
+          <h3>HTML</h3>
         </div>
         <div class="icon-container">
           <SiRails className="stack-icon" />
-          <p>Ruby on Rails</p>
+          <h3>Ruby on Rails</h3>
         </div>
         <div class="icon-container">
           <DiSass className="stack-icon" />
-          <p>CSS/Sass</p>
+          <h3>CSS/Sass</h3>
         </div>
         <div class="icon-container">
           <FaWordpress className="stack-icon" />
-          <p>Wordpress</p>
+          <h3>Wordress</h3>
+        </div>
+        <div class="icon-container">
+          <FaBootstrap className="stack-icon" />
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="icon-container">
+          <FaFigma className="stack-icon" />
+          <h3>Figma</h3>
         </div>
       </div>
     </div>
