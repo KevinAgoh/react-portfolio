@@ -63,6 +63,7 @@
       h1 {
         font-size: 60px;
         margin: 10px 0;
+        text-align: left;
 
         @include mobile {
           font-size: 40px;
