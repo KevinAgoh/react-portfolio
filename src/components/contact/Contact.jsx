@@ -1,5 +1,9 @@
 import "./contact.scss";
 import { useState } from "react";
+import { AiFillGithub } from 'react-icons/ai';
+import { AiFillLinkedin } from 'react-icons/ai';
+import { AiFillSlackCircle } from 'react-icons/ai';
+import { FaFigma } from 'react-icons/fa';
 
 export default function Contact() {
 
@@ -13,7 +17,14 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.svg" alt="" />
+        <div class="parent">
+          <div class="div1">
+            <a href="https://github.com/KevinAgoh"><AiFillGithub className="stack-icon" /></a>
+          </div>
+          <div class="div2">
+            <a href="https://www.linkedin.com/in/kevin-agoh/"><AiFillLinkedin className="stack-icon" /></a>
+          </div>
+        </div>
       </div>
       <div className="right">
         <h2>Contact</h2>
