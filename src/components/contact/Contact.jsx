@@ -14,7 +14,7 @@ export default function Contact() {
 
   return (
     <div className="contact" id="contact">
-      <div className="left">
+      <div className="left" data-aos="flip-left" data-aos-easing="ease-out" data-aos-duration="1000" data-aos-delay="0">
         <div class="parent">
           <div class="div1">
             <a href="https://github.com/KevinAgoh" target="_blank" rel="noreferrer"><AiFillGithub className="stack-icon" /></a>
@@ -24,7 +24,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="right">
+      <div className="right" data-aos="flip-right" data-aos-easing="ease-out" data-aos-duration="1000" data-aos-delay="0">
         <h2>Contact</h2>
         <form onSubmit={handleSubmit} action="mailto:kevinagoh@hotmail.fr" method="POST" encType="text/plain">
           <input type="email" id="email" name="email" placeholder="Your email" required="required" />

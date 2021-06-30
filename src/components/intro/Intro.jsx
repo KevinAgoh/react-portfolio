@@ -12,7 +12,7 @@ export default function Intro() {
   }, [])
 
   return (
-    <div className="intro" id="intro">
+    <div className="intro" id="intro" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1000" data-aos-delay="0">
       <div className="left">
         <div className="imgContainer">
           <img src="assets/Photo_de_profil_Kevin-detouree.png" alt="Kevin's face" />
@@ -25,7 +25,7 @@ export default function Intro() {
           <h3>Front-end <span ref={textRef}></span></h3>
         </div>
         <a href="#about">
-        <ArrowDropDownIcon className="arrow"/>
+          <ArrowDropDownIcon className="arrow"/>
         </a>
       </div>
     </div>

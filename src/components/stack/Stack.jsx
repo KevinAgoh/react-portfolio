@@ -5,7 +5,7 @@ import { FaHtml5 } from 'react-icons/fa';
 import { SiRails } from 'react-icons/si';
 import { DiSass } from 'react-icons/di';
 import { FaWordpress } from 'react-icons/fa';
-import { FaBootstrap } from 'react-icons/fa';
+import { BsBootstrap } from 'react-icons/bs';
 import { BiGitBranch } from 'react-icons/bi';
 import "./stack.scss";
 
@@ -14,7 +14,7 @@ export default function Stack() {
     <div className="stack" id="stack">
       <h1>My Stack</h1>
       <h4>These are the technologies I have learned and I use for my work</h4>
-      <div class="parent">
+      <div class="parent" data-aos="flip-down" data-aos-easing="ease-out" data-aos-duration="1000" data-aos-delay="0">
         <div class="icon-container">
           <FaReact className="stack-icon" />
           <h3>React</h3>
@@ -40,7 +40,7 @@ export default function Stack() {
           <h3>Wordress</h3>
         </div>
         <div class="icon-container">
-          <FaBootstrap className="stack-icon" />
+          <BsBootstrap className="stack-icon" />
           <h3>Bootstrap</h3>
         </div>
         <div class="icon-container">

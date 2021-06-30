@@ -1,14 +1,12 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include mobile {
     height: auto !important;
-    scroll-snap-align: end !important;
   }
 
   h1 {
