@@ -22,9 +22,9 @@ export default function Intro() {
         <div className="wrapper">
           <h2>Hi there, I am</h2>
           <h1>Kévin Agoh</h1>
-          <h3>Front-end <span ref={textRef}></span></h3>
+          <h3>Full-Stack <span ref={textRef}></span></h3>
         </div>
-        <a href="#about">
+        <a href="#portfolio">
           <ArrowDropDownIcon className="arrow"/>
         </a>
       </div>

@@ -14,7 +14,7 @@ export default function Stack() {
     <div className="stack" id="stack">
       <h1>My Stack</h1>
       <h4>These are the technologies I have learned and I use for my work</h4>
-      <div class="parent" data-aos="flip-down" data-aos-easing="ease-out" data-aos-duration="1000" data-aos-delay="0">
+      <div class="parent">
         <div class="icon-container">
           <FaReact className="stack-icon" />
           <h3>React</h3>
