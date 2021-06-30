@@ -24,7 +24,7 @@ export default function Intro() {
           <h1>Kévin Agoh</h1>
           <h3>Front-end <span ref={textRef}></span></h3>
         </div>
-        <a href="#portfolio">
+        <a href="#about">
         <ArrowDropDownIcon className="arrow"/>
         </a>
       </div>

@@ -6,7 +6,7 @@ import { SiRails } from 'react-icons/si';
 import { DiSass } from 'react-icons/di';
 import { FaWordpress } from 'react-icons/fa';
 import { FaBootstrap } from 'react-icons/fa';
-import { FaFigma } from 'react-icons/fa';
+import { BiGitBranch } from 'react-icons/bi';
 import "./stack.scss";
 
 export default function Stack() {
@@ -44,8 +44,8 @@ export default function Stack() {
           <h3>Bootstrap</h3>
         </div>
         <div class="icon-container">
-          <FaFigma className="stack-icon" />
-          <h3>Figma</h3>
+          <BiGitBranch className="stack-icon" />
+          <h3>Git/GitHub</h3>
         </div>
       </div>
     </div>
