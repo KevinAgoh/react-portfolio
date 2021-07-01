@@ -5,14 +5,10 @@ import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Stack from "./components/stack/Stack";
 import "./app.scss";
-import { useState } from "react"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useState } from "react";
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false);
-  AOS.init({startEvent: 'load'});
-  window.addEventListener('load', AOS.refresh);
 
   return (
     <div className="app">

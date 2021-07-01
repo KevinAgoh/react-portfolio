@@ -7,8 +7,13 @@
     flex-direction: column;
   }
 
-  .left {
+  .right {
     flex: 1;
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
 
     .parent {
       display: grid;
@@ -16,6 +21,11 @@
       grid-template-rows: repeat(1, 1fr);
       grid-column-gap: 0px;
       grid-row-gap: 0px;
+      margin-right: auto;
+      margin-left: auto;
+
+      @include mobile {
+      }
     }
 
     .div1 {
@@ -23,18 +33,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: visible;
     }
+
     .div2 {
       grid-area: 1 / 2 / 2 / 3;
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: visible;
     }
 
     .stack-icon {
       font-size: 160px;
       color: $mainColor;
-      position: absolute;
+
+      @include mobile {
+        font-size: 80px;
+      }
 
       @keyframes bounce {
         50% {
@@ -47,7 +63,8 @@
       }
     }
   }
-  .right {
+
+  .left {
     flex: 1;
 
     display: flex;
