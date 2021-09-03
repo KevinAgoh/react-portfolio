@@ -1,7 +1,7 @@
 export const reactPortfolio = [
   {
     id: 1,
-    title: "React football Quiz",
+    title: "React football quiz",
     img: "../../assets/football-quiz.png",
     link: "https://keum-football-quiz.netlify.app/"
   },
@@ -16,8 +16,13 @@ export const reactPortfolio = [
     title: "React portfolio",
     img: "../../assets/react-portfolio.png",
     link: "https://kevin-agoh.netlify.app/"
+  },
+  {
+    id: 4,
+    title: "React NBA quiz",
+    img: "../../assets/nba-quiz.png",
+    link: "https://react-retro-nba-quiz.netlify.app/"
   }
-
 ];
 
 export const railsPortfolio = [

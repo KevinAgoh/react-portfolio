@@ -12,7 +12,7 @@ import "./stack.scss";
 export default function Stack() {
   return (
     <div className="stack" id="stack">
-      <h1>My development stack</h1>
+      <h1>My tech stack</h1>
       <h4>These are the technologies I have learned and I use for my work</h4>
       <div class="parent">
         <div class="icon-container">
