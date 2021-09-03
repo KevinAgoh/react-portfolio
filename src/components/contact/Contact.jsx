@@ -5,22 +5,44 @@ import { AiFillLinkedin } from 'react-icons/ai';
 
 export default function Contact() {
 
-  const [message, setMessage] = useState(false);
-
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState("Submit");
+   
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setMessage(true)
-  }
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
 
   return (
     <div className="contact" id="contact">
       <div className="left">
         <h2>Contact</h2>
-        <form onSubmit={handleSubmit} action="mailto:kevinagoh@hotmail.fr" method="POST" encType="text/plain">
-          <input type="email" id="email" name="email" placeholder="Your email" required="required" />
-          <textarea placeholder="Your message" id="message" name="message" required="required" data-minlength="20"></textarea>
-          <button type="submit" name="submit" value="Send">Send</button>
-          {message && <span>Thanks, I'll reply ASAP 😁</span>}
+        <form onSubmit={handleSubmit}>
+          <div>
+            <input type="text" id="name" placeholder="Name" required />
+          </div>
+          <div>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div>
+            <textarea id="message" placeholder="Message" required />
+          </div>
+          <button type="submit">{status}</button>
         </form>
       </div>
       <div className="right">
