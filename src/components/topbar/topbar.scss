@@ -79,14 +79,14 @@
     .hamburger {
       span {
         &:first-child {
-          background-color: #219ebc;
+          background-color: $mainColor;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: #219ebc;
+          background-color: $mainColor;
           transform: rotate(-45deg);
         }
       }
