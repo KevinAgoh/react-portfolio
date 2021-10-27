@@ -8,7 +8,7 @@ export const reactPortfolio = [
   {
     id: 2,
     title: "React Netflix clone",
-    img: "../../assets/netflix_clone",
+    img: "../../assets/netflix_clone.png",
     link: "https://kevs-react-netflix-clone.netlify.app/"
   },
   {
