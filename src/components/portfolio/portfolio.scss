@@ -59,8 +59,8 @@
     }
 
     .item {
-      width: 260px;
-      height: 170px;
+      width: 33%;
+      height: 200px;
       border-radius: 20px;
       margin: 10px 20px;
       display: flex;
@@ -79,6 +79,19 @@
 
       a {
         position: absolute;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        position: absolute;
+        top: 5px;
         font-size: 20px;
         color: white;
         text-decoration: none;
