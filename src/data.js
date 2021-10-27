@@ -43,5 +43,11 @@ export const railsPortfolio = [
     title: "Rails Cocktail App",
     img: "../../assets/mister_cocktail.png",
     link: "https://keum-cocktail-app.herokuapp.com/"
+  },
+  {
+    id: 4,
+    title: "Rails Watchlist",
+    img: "../../assets/rails_watchlist.png",
+    link: "https://keum-rails-watchlist.herokuapp.com/"
   }
 ];

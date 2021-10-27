@@ -12,10 +12,10 @@
   overflow: hidden;
 
   .wrapper {
-    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 
     .left {
       display: flex;
@@ -58,6 +58,8 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        overflow: hidden;
+        padding-right: 20px;
 
         span {
           width: 100%;
