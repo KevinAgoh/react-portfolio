@@ -7,9 +7,9 @@ export const reactPortfolio = [
   },
   {
     id: 2,
-    title: "React temperature app",
-    img: "../../assets/temperature-app.png",
-    link: "https://kev-temperature-app.netlify.app/"
+    title: "React Netflix clone",
+    img: "../../assets/netflix_clone",
+    link: "https://kevs-react-netflix-clone.netlify.app/"
   },
   {
     id: 3,
