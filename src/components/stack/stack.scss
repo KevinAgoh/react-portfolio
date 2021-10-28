@@ -1,80 +1,96 @@
 @import "../../global.scss";
 
 .stack {
-  @media (max-width: 900px) {
-    height: auto !important;
-  }
-}
-
-h1 {
-  text-align: center;
-  font-size: 50px;
-  padding: 16px 0;
-  overflow: clip;
-  color: $secondColor;
+  padding: 100px 0;
+  height: auto !important;
 
   @include mobile {
+    padding: 20px 0;
+  }
+
+  h2 {
+    text-align: center;
     font-size: 40px;
-  }
-}
-
-h4 {
-  text-align: center;
-  color: $secondColor;
-  margin-bottom: 50px;
-  font-weight: 500;
-  font-size: 25px;
-}
-
-.parent {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  margin: auto;
-  height: auto;
-  overflow: auto;
-  grid-row-gap: 30px;
-
-  @media (min-width: 900px) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 135px;
-  }
-}
-
-.icon-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  height: 140px;
-  width: 140px;
-  overflow: visible;
-
-  h3 {
-    margin-block-start: auto;
+    font-weight: 400;
+    padding: 10px 0;
+    overflow: clip;
     color: $secondColor;
-    overflow: hidden;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
-  .stack-icon {
-    font-size: 85px;
-    color: $mainColor;
+  h4 {
+    text-align: center;
+    color: $secondColor;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 25px;
+
+    @include mobile {
+      font-size: 15px;
+      padding: 0 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .parent {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    height: auto;
+    overflow: auto;
+    grid-row-gap: 30px;
 
     @media (min-width: 900px) {
-      font-size: 80px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-row-gap: 15px;
     }
 
-    @keyframes bounce {
-      50% {
-        transform: translateY(-15px);
+    @include mobile {
+      font-size: 15px;
+      width: 80%;
+      padding: 0 10px;
+    }
+  }
+
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    width: auto;
+    padding: 20px;
+
+    h3 {
+      margin-block-start: auto;
+      color: $secondColor;
+      overflow: hidden;
+    }
+
+    .stack-icon {
+      font-size: 85px;
+      color: $mainColor;
+
+      @media (min-width: 900px) {
+        font-size: 80px;
       }
-    }
 
-    &:hover {
-      animation: bounce 1s infinite;
+      @keyframes bounce {
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      &:hover {
+        animation: bounce 1s infinite;
+      }
     }
   }
 }

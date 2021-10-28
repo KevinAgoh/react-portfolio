@@ -13,6 +13,7 @@
 
     @include mobile {
       flex-direction: column;
+      justify-content: center;
     }
 
     .parent {
@@ -47,6 +48,7 @@
     .stack-icon {
       font-size: 160px;
       color: $mainColor;
+      padding: 20px;
 
       @include mobile {
         font-size: 80px;
@@ -73,8 +75,14 @@
     justify-content: center;
 
     h2 {
-      font-size: 30px;
+      font-size: 40px;
+      font-weight: 400;
       color: $secondColor;
+
+      @include mobile {
+        font-size: 30px;
+        padding: 10px 0;
+      }
     }
 
     form {

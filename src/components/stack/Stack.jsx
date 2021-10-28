@@ -12,8 +12,8 @@ import "./stack.scss";
 export default function Stack() {
   return (
     <div className="stack" id="stack">
-      <h1>My tech stack</h1>
-      <h4>These are the technologies I have learned and I use for my work</h4>
+      <h2>Stack</h2>
+      <h4>These are the languages I speak and the tools I use for my work</h4>
       <div class="parent">
         <div class="icon-container">
           <FaReact className="stack-icon" />

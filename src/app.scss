@@ -16,10 +16,6 @@
       display: none;
     }
 
-    @include mobile {
-      margin: 15px 0px;
-    }
-
     > * {
       width: 100vw;
       height: calc(100vh - 70px);

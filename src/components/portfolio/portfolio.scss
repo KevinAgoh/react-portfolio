@@ -9,6 +9,10 @@
     height: auto !important;
   }
 
+  @media (max-width: 900px) {
+    height: auto !important;
+  }
+
   h1 {
     font-size: 40px;
     font-weight: 400;
@@ -17,7 +21,7 @@
     color: $secondColor;
 
     @include mobile {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
 
