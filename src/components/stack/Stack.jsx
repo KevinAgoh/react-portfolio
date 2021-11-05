@@ -14,36 +14,36 @@ export default function Stack() {
     <div className="stack" id="stack">
       <h2>Stack</h2>
       <h4>These are the languages I speak and the tools I use for my work</h4>
-      <div class="parent">
-        <div class="icon-container">
+      <div className="parent">
+        <div className="icon-container">
           <FaReact className="stack-icon" />
           <h3>React</h3>
         </div>
-        <div class="icon-container">
+        <div className="icon-container">
           <DiJavascript1 className="stack-icon" />
           <h3>JavaScript</h3>
         </div>
-        <div class="icon-container">
+        <div className="icon-container">
           <FaHtml5 className="stack-icon" />
           <h3>HTML</h3>
         </div>
-        <div class="icon-container">
+        <div className="icon-container">
           <SiRails className="stack-icon" />
           <h3>Ruby on Rails</h3>
         </div>
-        <div class="icon-container">
+        <div className="icon-container">
           <DiSass className="stack-icon" />
           <h3>CSS/Sass</h3>
         </div>
-        <div class="icon-container">
+        <div className="icon-container">
           <FaWordpress className="stack-icon" />
           <h3>Wordress</h3>
         </div>
-        <div class="icon-container">
+        <div className="icon-container">
           <BsBootstrap className="stack-icon" />
           <h3>Bootstrap</h3>
         </div>
-        <div class="icon-container">
+        <div className="icon-container">
           <BiGitBranch className="stack-icon" />
           <h3>Git/GitHub</h3>
         </div>

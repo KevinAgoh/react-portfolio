@@ -46,11 +46,11 @@ export default function Contact() {
         </form>
       </div>
       <div className="right">
-        <div class="parent">
-          <div class="div1">
+        <div className="parent">
+          <div className="div1">
             <a href="https://github.com/KevinAgoh" target="_blank" rel="noreferrer"><AiFillGithub className="stack-icon" /></a>
           </div>
-          <div class="div2">
+          <div className="div2">
             <a href="https://www.linkedin.com/in/kevin-agoh/" target="_blank" rel="noreferrer"><AiFillLinkedin className="stack-icon" /></a>
           </div>
         </div>

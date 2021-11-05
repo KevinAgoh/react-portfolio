@@ -35,8 +35,9 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>My work</h1>
       <ul>
-        {list.map((item) => (
+        {list.map((item, index) => (
           <PortfolioList
+            key={index}
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
@@ -48,7 +49,7 @@ export default function Portfolio() {
         {data.map((d) => (
           <div className="item">
             <img src={d.img} alt="" />
-            <a href={d.link}>{d.title}</a>
+            <a href={d.link} rel="noopener noreferrer" target="_blank">{d.title}</a>
           </div>
         ))}
       </div>

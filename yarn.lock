@@ -8286,10 +8286,10 @@
     "stdout-stream" "^1.4.0"
     "true-case-path" "^1.0.2"
 
-"nodemailer@^6.6.3":
-  "integrity" "sha512-faZFufgTMrphYoDjvyVpbpJcYzwyFnbAMmQtj1lVBYAUSm3SOy2fIdd9+Mr4UxPosBa0JRw9bJoIwQn+nswiew=="
-  "resolved" "https://registry.npmjs.org/nodemailer/-/nodemailer-6.6.3.tgz"
-  "version" "6.6.3"
+"nodemailer@^6.7.0":
+  "integrity" "sha512-AtiTVUFHLiiDnMQ43zi0YgkzHOEWUkhDgPlBXrsDzJiJvB29Alo4OKxHQ0ugF3gRqRQIneCLtZU3yiUo7pItZw=="
+  "resolved" "https://registry.npmjs.org/nodemailer/-/nodemailer-6.7.0.tgz"
+  "version" "6.7.0"
 
 "nopt@2 || 3":
   "integrity" "sha1-xkZdvwirzU2zWTF/eaxopkayj/k="
