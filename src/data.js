@@ -59,3 +59,12 @@ export const railsPortfolio = [
     description: "Another Rails CRUD app"
   }
 ];
+export const javascriptPortfolio = [
+  {
+    id: 1,
+    title: "Time tracking dashboard",
+    img: "../../assets/time-tracker.png",
+    link: "https://kevinagoh.github.io/time-tracking-app/",
+    description: "Vanilla JS timetracking app"
+  }
+];

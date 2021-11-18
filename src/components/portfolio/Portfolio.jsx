@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import {reactPortfolio, railsPortfolio} from "../../data";
+import {reactPortfolio, railsPortfolio, javascriptPortfolio} from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("react");
@@ -15,6 +15,10 @@ export default function Portfolio() {
     {
       id: "rails",
       title: "Ruby on Rails projects"
+    },
+    {
+      id: "javascript",
+      title: "Vanilla JS projects"
     }
   ];
 
@@ -25,6 +29,9 @@ export default function Portfolio() {
         break;
       case "rails":
         setData(railsPortfolio);
+        break;
+      case "javascript":
+        setData(javascriptPortfolio);
         break;
       default:
         setData(reactPortfolio);
